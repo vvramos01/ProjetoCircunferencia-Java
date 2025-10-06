@@ -1,0 +1,45 @@
+
+\\Package Figura
+\\Arquivo CircularCircunferencia
+package Figura;
+import java.util.Scanner;
+public class CircularCircunferencia {
+   public static void main(String[] args) {
+       Scanner sc = new Scanner(System.in);
+       FiguraGeometrica fg = new FiguraGeometrica();
+
+
+       System.out.print("Informe o raio: ");
+       fg.raio = sc.nextDouble();
+
+
+       System.out.printf("Circunferencia:  %.2f ", fg.circunferencia());
+       System.out.printf("volume:  %.2f ", fg.volume());
+       System.out.printf("Valor de PI:  %.2f ", fg.pi());
+
+
+       sc.close();
+   }
+}
+
+\\Arquivo FiguraGeometrica
+package Figura;
+
+
+public class FiguraGeometrica {
+   public double raio;
+
+
+   public double circunferencia(){
+       return 2.0 * pi() * raio;
+   }
+   public double volume(){
+       return (3.0 /4.0) * pi() * Math.pow(raio,3);
+   }
+   public double pi(){
+       return Math.PI;
+   }
+}
+
+
+
