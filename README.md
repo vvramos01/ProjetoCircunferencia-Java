@@ -1,2 +1,2 @@
-# Projeto-Circunfer-ncia-Java
+# Projeto-Circunferencia-Java
 Atividade Acadêmica
